@@ -1,4 +1,4 @@
 <div>
-  <h3><%= @email.object %> -- <%= link_to '<i class="fas fa-trash"></i>'.html_safe, email_path(@email.id), method: :delete, data: { confirm: 'Are you sure?' }, :remote => true, :class => 'destroy' %></h3>
-  <p><%= @email.body %></p>
+  <h3><%= @email.object %> -- <%= link_to '<i class="fas fa-trash" style="color:Gray"></i>'.html_safe, email_path(@email.id), method: :delete, data: { confirm: 'Are you sure?' }, :remote => true, :class => 'destroy' %></h3>
+  <p style="text-indent: 20px"><%= @email.body %></p>
 </div>

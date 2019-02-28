@@ -1,7 +1,7 @@
 <% @emails.each do |email| %>
   <% if email.read == true %>
-    <div><%= link_to email.object, email_path(email), style: "color:Gray", remote: true %></div>
+    <div><i class="far fa-check-square" style="color:gray"></i> <%= link_to email.object, email_path(email), style: "color:gray", remote: true %></div>
   <% else %>
-    <div><%= link_to email.object, email_path(email), remote: true %></div>
+    <div><i class="far fa-square" style="color:black"></i> <%= link_to email.object, email_path(email), style: "color:black; font-weight: bold", remote: true %></div>
   <% end %>	
 <% end %>

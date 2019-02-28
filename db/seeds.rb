@@ -11,7 +11,7 @@ require 'faker'
 #   end
 # end
 
-10.times do
+50.times do
   Email.create(object: Faker::Company.catch_phrase, body: Faker::Lorem.paragraph_by_chars(2000, false))
 end
 
