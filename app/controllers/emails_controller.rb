@@ -12,5 +12,14 @@ class EmailsController < ApplicationController
       format.js {render layout: false}
     end
   end
+
+  def destroy
+    @emails = Email.all
+    Email.find(params[:id].to_i).destroy
+    respond_to do |format|
+      format.js {render layout: false}
+    end
+  end
+
 end
 
